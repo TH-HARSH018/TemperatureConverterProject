@@ -45,16 +45,14 @@ public class TemperatureConverterTest {
                 0.001);
     }
 
-
     @Test
     void testKelvinToFahrenheit() {
         TemperatureConverter converter =
                 new TemperatureConverter();
 
-        assertEquals(50.0,
+        assertEquals(32.0,
                 converter.kelvinToFahrenheit(273.15),
                 0.001);
     }
-
 
 }
