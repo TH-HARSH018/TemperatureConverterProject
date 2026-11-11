@@ -35,4 +35,24 @@ public class TemperatureConverterTest {
                 0.001);
     }
 
+    @Test
+    void testBoilingPointCelsiusToFahrenheit() {
+        TemperatureConverter converter =
+                new TemperatureConverter();
+
+        assertEquals(212.0,
+                converter.celsiusToFahrenheit(100.0),
+                0.001);
+    }
+
+    @Test
+    void testKelvinToFahrenheit() {
+        TemperatureConverter converter =
+                new TemperatureConverter();
+
+        assertEquals(32.0,
+                converter.kelvinToFahrenheit(273.15),
+                0.001);
+    }
+
 }
